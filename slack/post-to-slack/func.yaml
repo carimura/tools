@@ -1,0 +1,11 @@
+schema_version: 20180708
+name: post-to-slack
+version: 0.0.35
+runtime: python
+entrypoint: python3 func.py
+format: http-stream
+idle_timeout: 3600
+triggers:
+- name: post-to-slack-trigger
+  type: http
+  source: /post-to-slack

@@ -1,9 +1,8 @@
 schema_version: 20180708
 name: post-to-slack
-version: 0.0.35
-runtime: python
-entrypoint: python3 func.py
-format: http-stream
+version: 0.0.95
+runtime: python3.7.1
+entrypoint: /python/bin/fdk /function/func.py handler
 idle_timeout: 3600
 triggers:
 - name: post-to-slack-trigger
